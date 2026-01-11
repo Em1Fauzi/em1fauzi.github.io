@@ -1389,22 +1389,6 @@ input, select, textarea {
 		letter-spacing: -0.015em;
 	}
 
-	@media screen and (max-width: 736px) {
-
-		h1 {
-			font-size: 1.75em;
-		}
-
-		h2 {
-			font-size: 1.375em;
-		}
-
-		h3, h4, h5, h6 {
-			font-size: 1em;
-		}
-
-	}
-
 	blockquote {
 		border-left: solid 0.5em #ddd;
 		padding: 1em 0 1em 2em;
@@ -1461,6 +1445,40 @@ input, select, textarea {
 	a:hover {
 		color: rgb(0, 0, 0);
 		/* background-color: rgba(0, 0, 150, 1); */
+	}
+
+	@media screen and (max-width: 736px) {
+
+		h1 {
+			font-size: 1.75em;
+		}
+
+		h2 {
+			font-size: 1.375em;
+		}
+
+		h3, h4, h5, h6 {
+			font-size: 1em;
+		}
+	}
+	@media screen and (max-width: 480px) {
+
+		h1 {
+			font-size: 1.5em;
+		}
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		h3, h4, h5, h6 {
+			font-size: 1em;
+		}
+
+		p, ul, ol{
+			font-size: 10pt;
+			line-height: 20pt;
+		}
 	}
 /* Table */
 
@@ -1632,12 +1650,26 @@ input, select, textarea {
 		font-size: 0.6em;
 	}
 
+	@media screen and (max-width: 480px) {
+		.caption-im {
+			line-height: 15pt;
+			font-size: 10pt;
+		}
+	}
+
 	figcaption.caption-im {
 		text-align: center;
 		color:rgb(85, 85, 85);
 		margin-bottom: 1em;
 		line-height: 20pt;
 		font-size: 0.6em;
+	}
+	
+	@media screen and (max-width: 480px) {
+		figcaption.caption-im {
+			line-height: 15pt;
+			font-size: 10pt;
+		}
 	}
 
 	.unselectable-image {
@@ -2369,11 +2401,16 @@ summary::marker {
 summary {
   cursor: pointer;
   font-size: 1em;
-  /* padding: 10px; */
-  /* background-color: #f1f1f1; */
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
+}
+
+@media screen and (max-width:480px) {
+	summary {
+		font-size: 0.6em;
+		line-height: 1.5em;
+		}
+	
 }
 
 /* Style the custom arrow/triangle */
