@@ -1942,6 +1942,13 @@ input, select, textarea {
   }
 }
 
+@media screen and (max-width: 480px){
+	  #nav a {
+		font-size: 0.6em;
+		color: #000;
+		}
+}
+
 /* Wrapper */
 
 	#wrapper {
@@ -2223,14 +2230,21 @@ input, select, textarea {
 					}
 
 						#main > .panel.intro header p {
-							font-size: 0.8em;
+							font-size: 0.5em;
+							line-height: 1.5em;
 							margin: 0.25em 0 0 0;
 						}
+
+						#main > .panel.intro header h1 {
+						line-height: 1.25em;
+						font-size: 2em;
+						margin-bottom: 0;
+					}
 
 				}
 
 					#main > .panel.contact p{
-						line-height: 0em;
+						margin-bottom: -10pt;
 					}
 
 					#main > .panel.contact ul{
